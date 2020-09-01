@@ -1,0 +1,176 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    margin: 20px 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.navlinks {
+    overflow: auto;
+    position: absolute;
+    right: 20px;
+  }
+
+.navlinks li {
+  margin: auto 0px;
+}
+  
+  .navlinks a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navlinks .icon {
+    display: none;
+  }
+
+.display-3 {
+  font-size: 2.2rem;
+}
+  
+@media screen and (max-width: 600px) {
+    .navlinks .nav-item {display: none;}
+    .bs-component a.icon .fa {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      width: auto;
+      display: block;
+      color: white;
+      width: 1.5em;
+    }
+
+    .navbar-brand {
+      position: relative;
+    }
+
+    .logo {
+      margin: 20px 10px 20px auto;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: center;
+    }
+
+    .display-3 {
+      text-align: center;
+    }
+
+    .bs-component {
+      width: 100%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .navlinks-responsive {position: relative;}
+    .bs-component a.icon-responsive .fa {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+        width: auto;
+        display: block;
+        z-index: 0;
+        color: black;
+    }
+    .navlinks-responsive a {
+      width: 100%;
+      display: block;
+      text-align: left;
+    }
+  }
+
+#mainhead {
+	padding-top: 30px;
+}
+
+.box{
+	border: 1px solid none;
+	width: 80%;
+	height: 100%;
+	margin: 20px 10%;
+	position: relative;
+}
+
+.column {
+  background-color: transparent;
+  float: left;
+  width: 33.3%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.title {
+  color: grey;
+}
+
+.column-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.column:hover .column-inner {
+  transform: rotateY(180deg);
+}
+
+.card, .contact-information {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.contact-information {
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.fa-3x {
+  margin: 75px 10px;
+  height: 3em;
+  width: 3rem;
+}

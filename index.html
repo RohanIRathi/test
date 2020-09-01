@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ITSF VIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/docs/_assets/css/custom.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lumen/bootstrap.min.css"
+    integrity="sha384-GzaBcW6yPIfhF+6VpKMjxbTx6tvR/yRd/yJub90CqoIn2Tz4rRXlSpTFYMKHCifX" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/stylesheet.css">
+</head>
+
+<body>
+  <div class="bs-docs-section clearfix">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+          <div class="header">
+            <a href="index.html"><img src="media\images\logo.png" class="logo" alt="ITSF Logo"></a>
+            <h1 style="text-align: center;">Information Technocrats Student Forum VIIT</h1>
+          </div>
+        </div>
+
+        <div class="bs-component">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="top-navbar">
+              <a class="navbar-brand" href="index.html">ITSF VIIT</a>
+              <div class="header">
+                <a href="javascript:void(0);" class="icon" id="icon" onclick="collapse()">
+                  <i class="fa fa-bars" style="text-align: center;"></i>
+                </a>
+              </div>
+            </div>
+            <div class="navlinks" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Codechef</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <form class="form-inline my-2 my-lg-0" style="float: right;">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="jumbotron">
+      <h1 class="display-3">Greetings from ITSF VIIT!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+        featured content or information.</p>
+      <hr class="my-4">
+      <p>ITSF (Information Technocrats Student Forum) is a cell of the IT department, VIIT Pune, which was started in
+        the year 2005. Since then it has been working to provide a platform for all-round development of the students.
+      </p>
+      <p>Every year the committee conducts various workshops and session to keep the students acquainted with the latest
+        technologies.</p>
+      <p>Apart from the technical activities, ITSF also conducts and support various extra-curricular, social,
+        environmental and cultural activities.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a>
+      </p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card" style="float: left;">
+          <div class="card text-white bg-primary mb-3" style="max-width: 20rem; margin: auto;">
+            <div class="card-header">Social Activity</div>
+            <div class="card-body">
+              <img src="media/images/social activity.jpg" alt="Test image" style="width: 100%;">
+              <p class="card-text">ITSF members participating in social activity by contributing to <b>Mamta
+                  Foundation</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card text-white bg-primary mb-3" style="max-width: 20rem; margin: auto;">
+            <div class="card-header">Codechef Campus Chapter</div>
+            <div class="card-body">
+              <img src="media/images/Screenshot (18).png" alt="Test image" style="width: 100%;">
+              <p class="card-text">Codechef campus chapter is a part of ITSF. Started in 2019, the goal of Codechef
+                campus
+                chapter is to develop the programming skills of students, their logical abilities, and to prepare them
+                for
+                competitive coding</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function collapse() {
+      var x = document.getElementById("navbarColor01");
+      var ico = document.getElementById("icon");
+      if (x.className === "navlinks" && ico.className === "icon") {
+        x.className = x.className.concat("-responsive");
+        ico.className = ico.className.concat("-responsive");
+      } else {
+        x.className = "navlinks";
+        ico.className = "icon";
+      }
+    }
+  </script>
+</body>
+
+</html>
