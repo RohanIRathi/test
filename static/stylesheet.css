@@ -9,7 +9,7 @@ html{
     border-radius: 100px;
 }
 
-.header {
+.page-header {
   display: flex;
   justify-content: center;
 }
@@ -24,75 +24,23 @@ html{
   margin: auto 0px;
 }
   
-  .navlinks a {
-    float: right;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.navlinks a {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  .navlinks .icon {
-    display: none;
-  }
+.navlinks .icon {
+  display: none;
+}
 
 .display-3 {
   font-size: 2.2rem;
 }
   
-@media screen and (max-width: 600px) {
-    .navlinks .nav-item {display: none;}
-    .bs-component a.icon .fa {
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      width: auto;
-      display: block;
-      color: white;
-      width: 1.5em;
-    }
-
-    .navbar-brand {
-      position: relative;
-    }
-
-    .logo {
-      margin: 20px 10px 20px auto;
-    }
-
-    .heading {
-      display: flex;
-      justify-content: center;
-    }
-
-    .display-3 {
-      text-align: center;
-    }
-
-    .bs-component {
-      width: 100%;
-    }
-}
-  
-@media screen and (max-width: 600px) {
-    .navlinks-responsive {position: relative;}
-    .bs-component a.icon-responsive .fa {
-      position: absolute;
-      top: 25px;
-      right: 30px;
-        width: auto;
-        display: block;
-        z-index: 0;
-        color: black;
-    }
-    .navlinks-responsive a {
-      width: 100%;
-      display: block;
-      text-align: left;
-    }
-  }
-
 #mainhead {
 	padding-top: 30px;
 }
@@ -109,6 +57,7 @@ html{
   background-color: transparent;
   float: left;
   width: 33.3%;
+  margin: 0 auto;
   margin-top: 8px;
   margin-bottom: 8px;
   padding: 0 8px;
@@ -116,7 +65,8 @@ html{
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+  margin: 10px;
+  text-align: center;
 }
 .button {
   border: none;
@@ -135,6 +85,7 @@ html{
 }
 
 .title {
+  font-size: 1.3rem;
   color: grey;
 }
 
@@ -158,6 +109,7 @@ html{
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  padding: 10px;
 }
 
 .contact-information {
@@ -170,7 +122,77 @@ html{
 }
 
 .fa-3x {
-  margin: 75px 10px;
+  margin: 75px 2px;
   height: 3em;
   width: 3rem;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;;
+}
+
+@media screen and (max-width: 992px) {
+  .navlinks .nav-item {display: none;}
+  .bs-component a.icon  {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: auto;
+    display: block;
+    color: white;
+    width: 1.5em;
+  }
+
+  .navbar-brand {
+    position: relative;
+  }
+
+  .logo {
+    margin: 20px 10px 20px auto;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .display-3 {
+    text-align: center;
+  }
+
+  .bs-component {
+    width: 100%;
+  }
+
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+.navlinks-responsive {position: relative;}
+.bs-component a.icon-responsive  {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+    width: auto;
+    display: block;
+    z-index: 0;
+    color: black;
+}
+.navlinks-responsive a {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.top-navbar {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
